@@ -1,0 +1,11 @@
+{
+  "name": "vsionar-top-hair",
+  "version": "1.0.0",
+  "scripts": {
+    "watch-css": "tailwindcss -i ./src/styles/input.css -o ./src/styles/output.css --watch"
+  },
+  "author": "Gabriel VS Frasão <gabrielvitor.frasao@gmail.com>",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}

@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply text-center font-light;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-center text-2xl font-semibold uppercase;
+}
+
+strong {
+  @apply font-extrabold uppercase;
+}
+
+.container-w {
+  @apply max-w-[1920px] mx-auto px-[5vw];
+}
+
+.shadow-w {
+  box-shadow: 0px -7.6817px 17.9971px 0.219477px rgba(0, 0, 0, 0.2);
+}
