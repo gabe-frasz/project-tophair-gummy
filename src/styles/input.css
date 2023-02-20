@@ -36,6 +36,7 @@ em {
   box-shadow: 0px 1.224px 81.6px 8.16px rgba(0, 0, 0, 0.35);
 }
 
+/* testimonials section ***************************************************************************/
 .testimonial-bg {
   background: linear-gradient(
     194.44deg,
@@ -46,7 +47,18 @@ em {
   box-shadow: 0px 0px 200px 35px rgba(0, 0, 0, 0.2);
 }
 
-.products-bg {
+/* CTO section */
+.cto-section {
+  @apply container-w py-16 bg-black text-white;
+}
+
+.cto-section h2 {
+  @apply lg:text-5xl;
+}
+
+/* combo products section *************************************************************************/
+.products-section {
+  @apply container-w flex flex-col xl:flex-row-reverse justify-center items-center gap-8 py-16 xl:py-40 bg-base-200;
   background: linear-gradient(
     182.23deg,
     #2a1a3f 7.21%,
@@ -55,29 +67,86 @@ em {
   );
 }
 
-.gradient-border {
+.card-wrapper {
   @apply w-full max-w-sm p-[10px] rounded-[44px] xl:max-w-md;
   background: linear-gradient(#b6b6b6ff, #b6b6b655);
 }
 
-.product-card {
+.card-wrapper > article {
   @apply px-5 py-8 bg-[#f1f1f1] rounded-[44px];
   box-shadow: 0px 0px 200px 10px rgba(0, 0, 0, 0.3);
 }
 
-.item-success {
+.card-wrapper h3 {
+  @apply normal-case text-3xl xl:text-4xl;
+}
+
+.card-wrapper .duration {
+  @apply block mb-6 text-xs xl:text-base;
+}
+
+.card-wrapper .bonus {
+  @apply flex flex-col gap-1;
+}
+
+.bonus .item-success {
   @apply relative not-italic font-medium flex justify-center items-center w-full max-w-[220px] mx-auto p-2 rounded-full bg-[#2A1A3F] text-white text-[8px] xl:text-xs xl:max-w-[288px] xl:p-3;
 }
 
-.item-failure {
+.bonus .item-failure {
   @apply relative not-italic font-medium flex justify-center items-center w-full max-w-[220px] mx-auto p-2 rounded-full bg-[#B6B6B6] text-white text-[8px] xl:text-xs xl:max-w-[288px] xl:p-3;
 }
 
-.item-success > img,
-.item-failure > img {
-  @apply absolute left-2 xl:left-5;
+.bonus .item-success > img,
+.bonus .item-failure > img {
+  @apply absolute left-2 xl:left-4 xl:w-6;
 }
 
+.card-wrapper article > img {
+  @apply my-8;
+}
+
+.card-wrapper article > img.fixed-size {
+  @apply h-44 xl:h-[220px] mx-auto;
+}
+
+.card-wrapper .promo {
+  @apply flex justify-center items-center gap-2;
+}
+
+.promo .from {
+  @apply line-through text-[0.5rem] text-[#525252] font-medium xl:text-xs;
+}
+
+.promo .twelve-x {
+  @apply normal-case text-sm text-[#2A1A3F] xl:text-xl;
+}
+
+.promo .current-price {
+  @apply text-[#2A1A3F] text-xl xl:text-3xl;
+}
+
+.promo .current-price > sup {
+  @apply font-extrabold;
+}
+
+.card-wrapper hr {
+  @apply h-0.5 bg-[#B6B6B6] my-2;
+}
+
+.card-wrapper .full-price {
+  @apply block text-[#292929] text-xs xl:text-base;
+}
+
+.card-wrapper .shipping {
+  @apply block font-light text-[8px] xl:text-xs;
+}
+
+.card-wrapper .button {
+  @apply block w-[224px] mt-6 mx-auto text-[#11AC03] font-extrabold border-[3px] border-[#11AC03] rounded-full xl:border-[5px] xl:w-72 xl:text-xl xl:p-3;
+}
+
+/* faq section ************************************************************************************/
 #faq article header {
   background: linear-gradient(90deg, #9f26ca 0%, #ad6bd9 174.54%);
 }
