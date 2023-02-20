@@ -553,6 +553,14 @@ video {
   top: 50%;
 }
 
+.top-\[5\%\] {
+  top: 5%;
+}
+
+.top-\[55\%\] {
+  top: 55%;
+}
+
 .-my-6 {
   margin-top: -1.5rem;
   margin-bottom: -1.5rem;
@@ -706,10 +714,6 @@ video {
 
 .max-w-\[256px\] {
   max-width: 256px;
-}
-
-.max-w-\[44\%\] {
-  max-width: 44%;
 }
 
 .max-w-\[596px\] {
@@ -913,24 +917,17 @@ video {
   padding-bottom: 3.5rem;
 }
 
-.pt-12 {
-  padding-top: 3rem;
-}
-
 .pt-20 {
   padding-top: 5rem;
-}
-
-.pt-24 {
-  padding-top: 6rem;
 }
 
 .text-start {
   text-align: start;
 }
 
-.text-end {
-  text-align: end;
+.\!text-lg {
+  font-size: 1.125rem !important;
+  line-height: 1.75rem !important;
 }
 
 .text-3xl {
@@ -1195,6 +1192,22 @@ em {
 }
 
 @media (min-width: 640px) {
+  .sm\:bottom-\[5\%\] {
+    bottom: 5%;
+  }
+
+  .sm\:left-auto {
+    left: auto;
+  }
+
+  .sm\:right-auto {
+    right: auto;
+  }
+
+  .sm\:top-auto {
+    top: auto;
+  }
+
   .sm\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -1206,6 +1219,10 @@ em {
 
   .sm\:hidden {
     display: none;
+  }
+
+  .sm\:max-w-\[44\%\] {
+    max-width: 44%;
   }
 
   .sm\:scale-\[1\.01\] {
@@ -1228,6 +1245,14 @@ em {
 
   .sm\:justify-between {
     justify-content: space-between;
+  }
+
+  .sm\:pb-12 {
+    padding-bottom: 3rem;
+  }
+
+  .sm\:pt-12 {
+    padding-top: 3rem;
   }
 
   .sm\:text-start {
@@ -1501,14 +1526,6 @@ em {
   .xl\:py-56 {
     padding-top: 14rem;
     padding-bottom: 14rem;
-  }
-
-  .xl\:pt-24 {
-    padding-top: 6rem;
-  }
-
-  .xl\:pt-36 {
-    padding-top: 9rem;
   }
 
   .xl\:text-2xl {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Top Hair | VSIONAR</title>
+    <title>TOPHAIR | VSIONAR</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,11 +17,11 @@
   </head>
 
   <body class="min-h-screen">
-    <header id="top" class="py-7 bg-black text-white">
+    <header class="py-7 bg-black text-white">
       <nav
         class="container-w flex justify-center items-center lg:justify-between"
       >
-        <a href="/#top" class="flex gap-5 items-center">
+        <div class="flex gap-5 items-center">
           <img
             src="./assets/gummy-bear.png"
             alt="Urso de goma"
@@ -29,7 +29,7 @@
           />
 
           <h1 class="lg:text-5xl">TOP<span>HAIR</span></h1>
-        </a>
+        </div>
 
         <ul class="hidden lg:flex items-center gap-12 2xl:gap-24">
           <li>
@@ -48,8 +48,9 @@
             <a
               href="/#peca-agora"
               class="block px-12 py-3 2xl:px-24 2xl:py-6 bg-white text-black rounded-full"
-              >Peça Agora</a
             >
+              Peça Agora
+            </a>
           </li>
         </ul>
       </nav>
@@ -60,7 +61,7 @@
     >
       <img
         src="./assets/main-section.png"
-        alt="Ilustração dos produtos Top Hair"
+        alt="Ilustração dos produtos TOPHAIR"
         class="w-full xl:max-w-lg 2xl:max-w-3xl mx-auto"
       />
 
@@ -75,20 +76,20 @@
         </p>
 
         <div class="hidden xl:flex gap-24">
-          <img src="./assets/lactose.svg" alt="" />
+          <img src="./assets/lactose.svg" alt="Sem lactose" />
 
-          <img src="./assets/sugar.svg" alt="" />
+          <img src="./assets/sugar.svg" alt="Sem açúcar" />
 
-          <img src="./assets/gluten.svg" alt="" />
+          <img src="./assets/gluten.svg" alt="Sem glúten" />
         </div>
       </div>
     </main>
 
     <article
-      class="container-w flex flex-col xl:flex-row xl:items-centers gap-12 xl:gap-28 py-14 xl:py-52 bg-base-200 text-white"
+      class="container-w flex flex-col xl:flex-row xl:items-center gap-12 xl:gap-28 py-14 xl:py-52 bg-base-200 text-white"
     >
       <div>
-        <h2 class="mb-5 text-start xl:text-5xl xl:mb-10">
+        <h2 class="mb-5 text-start !text-lg xl:text-5xl xl:mb-10">
           Cientistas descobrem o principal motivo da queda capilar feminino
         </h2>
 
@@ -112,12 +113,13 @@
     </article>
 
     <article
+      id="sobre"
       class="container-w flex flex-col lg:flex-row-reverse lg:justify-between items-center py-16 lg:py-0 bg-base-50"
     >
       <div class="relative w-fit mx-auto lg:hidden">
         <img
           src="./assets/logo.svg"
-          alt="Top Hair logo"
+          alt="TOPHAIR logo"
           class="w-full max-w-2xl"
         />
 
@@ -130,14 +132,14 @@
 
       <img
         src="./assets/about-section.png"
-        alt="Produto Top Hair"
+        alt="Produto TOPHAIR"
         class="w-full max-w-xl my-14 lg:my-0"
       />
 
       <div>
         <img
           src="./assets/logo.svg"
-          alt="Top Hair logo"
+          alt="TOPHAIR logo"
           class="hidden lg:block w-full max-w-xl mb-10"
         />
 
@@ -162,7 +164,10 @@
       </div>
     </article>
 
-    <section class="container-w pt-20 pb-14 bg-base-200 text-white">
+    <section
+      id="detalhes"
+      class="container-w pt-20 pb-14 bg-base-200 text-white"
+    >
       <h2 class="mb-12 xl:text-6xl">EM CADA GUMMY VOCÊ ENCONTRARÁ:</h2>
 
       <div
@@ -197,7 +202,7 @@
     </section>
 
     <section class="container-w py-14 xl:py-40 bg-base-100">
-      <h2 class="mb-12 lg:mb-24 xl:text-6xl">
+      <h2 class="mb-12 !text-lg lg:mb-24 xl:text-6xl">
         PORQUE A TOPHAIR GUMMY PODE SER A SUA MAIOR ALIADA CONTRA OS PROBLEMAS
         CAPILARES?
       </h2>
@@ -276,36 +281,42 @@
       />
 
       <div
-        class="absolute left-[5vw] hidden lg:block w-fit max-w-[44%] pt-12 xl:pt-24"
+        class="absolute left-[5vw] right-[5vw] sm:right-auto w-fit top-[5%] sm:max-w-[44%] sm:pt-12"
       >
-        <h2 class="w-fit mb-5 text-start xl:text-6xl">Envio Express</h2>
+        <h2 class="w-fit mx-auto sm:mx-0 mb-5 sm:text-start xl:text-6xl">
+          Envio Express
+        </h2>
 
-        <p class="mb-4 text-start xl:text-xl">
+        <p class="mb-4 sm:text-start text-xs xl:text-xl">
           Realizando a compra e pagamento em dias úteis, sua TopHair é enviada
           em até 48h. Esse novo modelo de envio, foi pensado para diminuir o seu
           tempo de espera para o tratamento.
         </p>
 
-        <strong class="block w-fit text-start normal-case xl:text-xl">
+        <strong
+          class="block w-fit mx-auto sm:mx-0 sm:text-start text-xs normal-case xl:text-xl"
+        >
           *Consulte o regulamento em perguntas frequentes
         </strong>
       </div>
 
       <div
-        class="absolute right-[5vw] hidden lg:block w-fit max-w-[44%] pt-24 xl:pt-36"
+        class="absolute left-[5vw] right-[5vw] sm:left-auto w-fit top-[55%] sm:top-auto sm:bottom-[5%] sm:max-w-[44%] sm:pb-12"
       >
-        <h2 class="mb-5 text-end xl:text-6xl">
+        <h2 class="mx-auto sm:mx-0 mb-5 sm:text-end xl:text-6xl">
           GARANTIA DE <br class="hidden xl:block" />
           30 DIAS
         </h2>
 
-        <p class="mb-4 text-end xl:text-xl">
+        <p class="mb-4 sm:text-end text-xs xl:text-xl">
           Com ela, você tem segurança para experimentar o produto e caso não
           tenha nenhum resultado comprovado, basta entrar em contato com a
           gente!
         </p>
 
-        <strong class="block text-end normal-case xl:text-xl">
+        <strong
+          class="block mx-auto sm:mx-0 sm:text-end text-xs normal-case xl:text-xl"
+        >
           *Consulte o regulamento em perguntas frequentes
         </strong>
       </div>
@@ -409,7 +420,7 @@
     </section>
 
     <section
-      id="products-1"
+      id="peca-agora"
       class="container-w products-bg flex flex-col xl:flex-row-reverse justify-center items-center gap-8 py-16 xl:py-56 bg-base-200"
     >
       <h2 class="sr-only invisible">Combos de produtos Hair Top</h2>
@@ -739,7 +750,6 @@
     </section>
 
     <section
-      id="products-2"
       class="container-w products-bg flex flex-col xl:flex-row-reverse justify-center items-center gap-8 py-16 xl:py-56 bg-base-200"
     >
       <h2 class="sr-only invisible">Combos de produtos Hair Top</h2>
