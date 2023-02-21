@@ -2,9 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TOPHAIR | VSIONAR</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,13 +11,14 @@
       rel="stylesheet"
     />
 
+    <title>TOPHAIR | VSIONAR</title>
     <link rel="shortcut icon" href="./assets/gummy-bear.png" type="image/png" />
 
     <link href="./styles/output.css" rel="stylesheet" />
   </head>
 
   <body class="min-h-screen">
-    <header class="py-7 bg-black text-white">
+    <header class="py-4 bg-black text-white">
       <nav
         class="container-w flex justify-center items-center lg:justify-between"
       >
@@ -30,7 +29,9 @@
             class="hidden lg:block w-16"
           />
 
-          <h1 class="lg:text-5xl">TOP<span>HAIR</span></h1>
+          <h1 class="lg:text-3xl">
+            TOP<span class="font-extralight">HAIR</span>
+          </h1>
         </div>
 
         <ul class="hidden lg:flex items-center gap-10 2xl:gap-20">
@@ -59,7 +60,7 @@
     </header>
 
     <main
-      class="container-w container-px flex flex-col xl:flex-row items-center gap-20 w-full py-20 xl:py-48"
+      class="container-w container-px flex flex-col xl:flex-row items-center gap-20 w-full py-20 xl:py-36"
     >
       <img
         src="./assets/main-section.png"
@@ -68,27 +69,27 @@
       />
 
       <div>
-        <h2 class="mb-5 xl:text-5xl">
+        <h2 class="mb-5 xl:text-5xl xl:text-start">
           O que tem feito para cuidar das quedas capilares?
         </h2>
 
-        <p class="lg:mb-14 xl:text-xl">
+        <p class="lg:mb-14 xl:text-xl xl:text-start">
           A gummy da TOP HAIR pode te ajudar a restaurar seus cabelos em poucas
           semanas.
         </p>
 
         <div class="hidden xl:flex gap-24">
-          <img src="./assets/lactose.svg" alt="Sem lactose" />
+          <img src="./assets/lactose.svg" alt="Sem lactose" class="w-24" />
 
-          <img src="./assets/sugar.svg" alt="Sem açúcar" />
+          <img src="./assets/sugar.svg" alt="Sem açúcar" class="w-24" />
 
-          <img src="./assets/gluten.svg" alt="Sem glúten" />
+          <img src="./assets/gluten.svg" alt="Sem glúten" class="w-24" />
         </div>
       </div>
     </main>
 
     <article
-      class="container-w flex flex-col xl:flex-row xl:items-center gap-12 xl:gap-28 py-14 xl:py-52 bg-base-200 text-white"
+      class="container-w flex flex-col xl:flex-row xl:items-center gap-12 xl:gap-28 py-14 xl:py-36 bg-base-200 text-white"
     >
       <div>
         <h2 class="mb-5 text-start text-lg xl:text-4xl xl:mb-10">
@@ -110,7 +111,7 @@
       <img
         src="./assets/section-two.png"
         alt="Ilustração de placa de petri de laboratório"
-        class="w-full max-w-xl mx-auto"
+        class="w-full max-w-lg mx-auto"
       />
     </article>
 
@@ -135,7 +136,7 @@
       <img
         src="./assets/about-section.png"
         alt="Produto TOPHAIR"
-        class="w-full max-w-xl my-14 lg:my-0"
+        class="w-full max-w-md lg:max-w-xl xl:max-w-3xl lg:-mx-16 my-14 lg:my-0"
       />
 
       <div>
@@ -145,12 +146,12 @@
           class="hidden lg:block w-full max-w-lg mb-10"
         />
 
-        <p class="max-w-4xl mb-5 text-start xl:text-lg">
+        <p class="mb-5 text-start xl:text-lg max-w-lg">
           Diferente de tudo que você provavelmente já testou. Top Hair Gummy é o
           único tratamento capaz de restaurar os seus cabelos em poucas semanas.
         </p>
 
-        <p class="max-w-4xl mb-5 lg:mb-10 xl:mb-12 text-start xl:text-lg">
+        <p class="mb-5 lg:mb-10 xl:mb-12 text-start xl:text-lg max-w-lg">
           O segredo da nossa fórmula, está na associação dos principais agentes
           naturais, responsáveis pelo estímulo da produção capilar. Biotina,
           Vitamina A, Ácido Hialurônico, Complexo de Vitaminas e o Zinco compõem
@@ -159,7 +160,7 @@
           seus fios.
         </p>
 
-        <strong class="block text-start">
+        <strong class="block text-start max-w-lg">
           REDUZ A QUEDA EM 80% COM O PODER DO ÁCIDO HIALURÔNICO ASSOCIADO A
           BIOTINA
         </strong>
@@ -210,9 +211,9 @@
       </h2>
 
       <div
-        class="flex flex-col gap-5 lg:flex-row lg:justify-center xl:items-center lg:gap-20 xl:justify-between"
+        class="flex flex-col gap-5 lg:flex-row lg:justify-center xl:items-center"
       >
-        <div class="flex flex-col gap-5 lg:gap-24">
+        <div class="flex flex-col gap-5 lg:gap-20">
           <em
             class="inline-block w-full max-w-xs mx-auto p-6 bg-black text-xs sm:text-sm text-white rounded-full shadow-w"
           >
@@ -239,10 +240,10 @@
         <img
           src="./assets/gummy-bear.png"
           alt="Urso de goma"
-          class="hidden xl:block max-w-[596px] xl:-mx-40"
+          class="hidden xl:block max-w-md"
         />
 
-        <div class="flex flex-col gap-5 lg:gap-24">
+        <div class="flex flex-col gap-5 lg:gap-20">
           <em
             class="inline-block w-full max-w-xs mx-auto p-6 bg-black text-xs sm:text-sm text-white rounded-full shadow-w"
           >
@@ -289,35 +290,35 @@
           Envio Express
         </h2>
 
-        <p class="mb-4 sm:text-start text-xs xl:text-lg">
+        <p class="mb-4 sm:text-start text-xs xl:text-base font-extralight">
           Realizando a compra e pagamento em dias úteis, sua TopHair é enviada
           em até 48h. Esse novo modelo de envio, foi pensado para diminuir o seu
           tempo de espera para o tratamento.
         </p>
 
         <strong
-          class="block w-fit mx-auto sm:mx-0 sm:text-start text-xs normal-case xl:text-lg"
+          class="block w-fit mx-auto sm:mx-0 sm:text-start text-xs normal-case xl:text-base font-bold"
         >
           *Consulte o regulamento em perguntas frequentes
         </strong>
       </div>
 
       <div
-        class="absolute left-[5vw] right-[5vw] sm:left-auto w-fit top-[55%] sm:top-auto sm:bottom-[5%] sm:max-w-[44%] sm:pb-12"
+        class="absolute left-[5vw] right-[5vw] sm:left-auto w-fit top-[55%] sm:top-[15%] sm:max-w-[44%] sm:py-12"
       >
         <h2 class="mx-auto sm:mx-0 mb-5 sm:text-end xl:text-5xl">
           GARANTIA DE <br class="hidden xl:block" />
           30 DIAS
         </h2>
 
-        <p class="mb-4 sm:text-end text-xs xl:text-lg">
+        <p class="mb-4 sm:text-end text-xs xl:text-base font-extralight">
           Com ela, você tem segurança para experimentar o produto e caso não
           tenha nenhum resultado comprovado, basta entrar em contato com a
           gente!
         </p>
 
         <strong
-          class="block mx-auto sm:mx-0 sm:text-end text-xs normal-case xl:text-lg"
+          class="block mx-auto sm:mx-0 sm:text-end text-xs normal-case xl:text-base font-bold"
         >
           *Consulte o regulamento em perguntas frequentes
         </strong>
@@ -333,12 +334,12 @@
 
       <div class="flex flex-col lg:flex-row gap-12">
         <article
-          class="testimonial-bg w-full max-w-sm lg:max-w-md h-fit p-12 text-white rounded-[64px]"
+          class="testimonial-bg w-full max-w-[350px] h-fit p-11 text-white rounded-[64px]"
         >
           <img
             src="./assets/play-video.png"
             alt="Depoimento"
-            class="w-full max-w-[256px] mx-auto mb-8"
+            class="w-full max-w-[200px] mx-auto mb-8"
           />
 
           <h3 class="mb-2 normal-case lg:text-3xl">Deisy</h3>
@@ -349,7 +350,7 @@
             class="mx-auto mb-5 lg:mb-6"
           />
 
-          <strong class="block mb-2 lg:mb-3 text-xl normal-case">
+          <strong class="block mb-2 lg:mb-3 normal-case">
             Melhorou minha alto estima.
           </strong>
 
@@ -357,15 +358,17 @@
             “Cheio de cabelo novo em 1 mês, nunca achei que fosse ter tanto
             orgulho desse cabelo.”
           </blockquote>
+
+          <br />
         </article>
 
         <article
-          class="testimonial-bg w-full max-w-sm lg:max-w-md h-fit p-12 text-white rounded-[64px]"
+          class="testimonial-bg w-full max-w-[350px] h-fit p-11 text-white rounded-[64px]"
         >
           <img
             src="./assets/play-video.png"
             alt="Depoimento"
-            class="w-full max-w-[256px] mx-auto mb-8"
+            class="w-full max-w-[200px] mx-auto mb-8"
           />
 
           <h3 class="mb-2 normal-case lg:text-3xl">Clara</h3>
@@ -376,7 +379,7 @@
             class="mx-auto mb-5 lg:mb-6"
           />
 
-          <strong class="block mb-2 lg:mb-3 text-xl normal-case">
+          <strong class="block mb-2 lg:mb-3 normal-case">
             Qualidade e certeza de eficácia.
           </strong>
 
@@ -387,12 +390,12 @@
         </article>
 
         <article
-          class="testimonial-bg w-full max-w-sm lg:max-w-md h-fit p-12 text-white rounded-[64px]"
+          class="testimonial-bg w-full max-w-[350px] h-fit p-11 text-white rounded-[64px]"
         >
           <img
             src="./assets/play-video.png"
             alt="Depoimento"
-            class="w-full max-w-[256px] mx-auto mb-8"
+            class="w-full max-w-[200px] mx-auto mb-8"
           />
 
           <h3 class="mb-2 normal-case lg:text-3xl">Laiane</h3>
@@ -403,7 +406,7 @@
             class="mx-auto mb-5 lg:mb-6"
           />
 
-          <strong class="block mb-2 lg:mb-3 text-xl normal-case">
+          <strong class="block mb-2 lg:mb-3 normal-case">
             A queda diminuiu, estou amando!
           </strong>
 
@@ -426,7 +429,7 @@
 
       <div class="card-wrapper">
         <article>
-          <h3>1 Pote</h3>
+          <h3>1 pote</h3>
 
           <span class="duration"> 1 mês de tratamento </span>
 
@@ -477,7 +480,7 @@
 
       <div class="card-wrapper sm:scale-[1.05]">
         <article>
-          <h3>3 Potes + Spray</h3>
+          <h3>3 potes + Spray</h3>
 
           <span class="duration">3 meses de tratamento</span>
 
@@ -524,7 +527,7 @@
 
       <div class="card-wrapper">
         <article>
-          <h3>5 Potes</h3>
+          <h3>5 potes</h3>
 
           <span class="duration"> 5 meses de tratamento </span>
 
@@ -570,16 +573,16 @@
       </div>
     </section>
 
-    <section id="faq" class="container-w py-16 lg:py-20 bg-base-50">
+    <section id="faq" class="container-w py-16 bg-base-50">
       <h2 class="mb-9 lg:text-5xl lg:mb-20">FAQ - PRINCIPAIS PERGUNTAS</h2>
 
       <div class="flex flex-col gap-7">
-        <article class="max-w-4xl mx-auto text-white">
+        <article class="max-w-2xl mx-auto text-white">
           <header
-            class="flex justify-between items-center gap-2 h-[72px] lg:h-28 px-4 lg:px-10 rounded-xl lg:rounded-[32px]"
+            class="flex justify-between items-center gap-2 h-[72px] lg:h-24 px-4 lg:px-10 rounded-xl lg:rounded-[28px]"
           >
             <h3
-              class="text-xs text-start font-extrabold normal-case lg:text-lg"
+              class="text-xs text-start font-extrabold normal-case lg:text-base"
             >
               Como devo usar a TOPHAIR gummy?
             </h3>
@@ -588,7 +591,7 @@
           </header>
 
           <p
-            class="w-[90%] mx-auto p-3 text-[8px] lg:text-sm lg:px-8 lg:py-4 text-start font-light bg-[#2A1A3F] rounded-br-xl rounded-bl-xl lg:rounded-br-[32px] lg:rounded-bl-[32px]"
+            class="w-[90%] mx-auto p-3 text-[8px] lg:text-xs lg:px-8 lg:py-4 text-start font-light bg-[#2A1A3F] rounded-br-xl rounded-bl-xl lg:rounded-br-[28px] lg:rounded-bl-[28px]"
           >
             Consumir 1 gominha por dia! É importante não exceder o consumo
             diário evitando assim alta concentração de vitaminas no organismo. 1
@@ -599,12 +602,12 @@
           </p>
         </article>
 
-        <article class="max-w-4xl mx-auto text-white">
+        <article class="max-w-2xl mx-auto text-white">
           <header
-            class="flex justify-between items-center gap-2 h-[72px] lg:h-28 px-4 lg:px-10 rounded-xl lg:rounded-[32px]"
+            class="flex justify-between items-center gap-2 h-[72px] lg:h-24 px-4 lg:px-10 rounded-xl lg:rounded-[28px]"
           >
             <h3
-              class="text-xs text-start font-extrabold normal-case lg:text-lg"
+              class="text-xs text-start font-extrabold normal-case lg:text-base"
             >
               Quais cuidados devo ter com a TOPHAIR gummy?
             </h3>
@@ -613,7 +616,7 @@
           </header>
 
           <p
-            class="w-[90%] mx-auto p-3 text-[8px] lg:text-sm lg:px-8 lg:py-4 text-start font-light bg-[#2A1A3F] rounded-br-xl rounded-bl-xl lg:rounded-br-[32px] lg:rounded-bl-[32px]"
+            class="w-[90%] mx-auto p-3 text-[8px] lg:text-xs lg:px-8 lg:py-4 text-start font-light bg-[#2A1A3F] rounded-br-xl rounded-bl-xl lg:rounded-br-[28px] lg:rounded-bl-[28px]"
           >
             Por se tratar de um produto em goma, é importante que você tenha
             alguns cuidados pra garantir que apresenta os resultados desejados.
@@ -625,12 +628,12 @@
           </p>
         </article>
 
-        <article class="max-w-4xl mx-auto text-white">
+        <article class="max-w-2xl mx-auto text-white">
           <header
-            class="flex justify-between items-center gap-2 h-[72px] lg:h-28 px-4 lg:px-10 rounded-xl lg:rounded-[32px]"
+            class="flex justify-between items-center gap-2 h-[72px] lg:h-24 px-4 lg:px-10 rounded-xl lg:rounded-[28px]"
           >
             <h3
-              class="text-xs text-start font-extrabold normal-case lg:text-lg"
+              class="text-xs text-start font-extrabold normal-case lg:text-base"
             >
               Em quanto tempo a TOPHAIR gummy faz efeito?
             </h3>
@@ -639,7 +642,7 @@
           </header>
 
           <p
-            class="w-[90%] mx-auto p-3 text-[8px] lg:text-sm lg:px-8 lg:py-4 text-start font-light bg-[#2A1A3F] rounded-br-xl rounded-bl-xl lg:rounded-br-[32px] lg:rounded-bl-[32px]"
+            class="w-[90%] mx-auto p-3 text-[8px] lg:text-xs lg:px-8 lg:py-4 text-start font-light bg-[#2A1A3F] rounded-br-xl rounded-bl-xl lg:rounded-br-[28px] lg:rounded-bl-[28px]"
           >
             A TOPHAIR GUMMY é um tratamento contínuo com resultados visíveis a
             partir de 3 semanas. Lembrando que os resultados variam de acordo
@@ -648,12 +651,12 @@
           </p>
         </article>
 
-        <article class="max-w-4xl mx-auto text-white">
+        <article class="max-w-2xl mx-auto text-white">
           <header
-            class="flex justify-between items-center gap-2 h-[72px] lg:h-28 px-4 lg:px-10 rounded-xl lg:rounded-[32px]"
+            class="flex justify-between items-center gap-2 h-[72px] lg:h-24 px-4 lg:px-10 rounded-xl lg:rounded-[28px]"
           >
             <h3
-              class="text-xs text-start font-extrabold normal-case lg:text-lg"
+              class="text-xs text-start font-extrabold normal-case lg:text-base"
             >
               Gestantes e Lactantes podem consumir TOPHAIR gummy?
             </h3>
@@ -662,7 +665,7 @@
           </header>
 
           <p
-            class="w-[90%] mx-auto p-3 text-[8px] lg:text-sm lg:px-8 lg:py-4 text-start font-light bg-[#2A1A3F] rounded-br-xl rounded-bl-xl lg:rounded-br-[32px] lg:rounded-bl-[32px]"
+            class="w-[90%] mx-auto p-3 text-[8px] lg:text-xs lg:px-8 lg:py-4 text-start font-light bg-[#2A1A3F] rounded-br-xl rounded-bl-xl lg:rounded-br-[28px] lg:rounded-bl-[28px]"
           >
             Embora a TOPHAIR GUMMY seja um produto natural, sempre recomendamos
             que gestantes, lactantes e menores de 18 anos devem consumir o
@@ -671,12 +674,12 @@
           </p>
         </article>
 
-        <article class="max-w-4xl mx-auto text-white">
+        <article class="max-w-2xl mx-auto text-white">
           <header
-            class="flex justify-between items-center gap-2 h-[72px] lg:h-28 px-4 lg:px-10 rounded-xl lg:rounded-[32px]"
+            class="flex justify-between items-center gap-2 h-[72px] lg:h-24 px-4 lg:px-10 rounded-xl lg:rounded-[28px]"
           >
             <h3
-              class="text-xs text-start font-extrabold normal-case lg:text-lg"
+              class="text-xs text-start font-extrabold normal-case lg:text-base"
             >
               Qual o prazo de entrega da TOPHAIR gummy?
             </h3>
@@ -685,7 +688,7 @@
           </header>
 
           <p
-            class="w-[90%] mx-auto p-3 text-[8px] lg:text-sm lg:px-8 lg:py-4 text-start font-light bg-[#2A1A3F] rounded-br-xl rounded-bl-xl lg:rounded-br-[32px] lg:rounded-bl-[32px]"
+            class="w-[90%] mx-auto p-3 text-[8px] lg:text-xs lg:px-8 lg:py-4 text-start font-light bg-[#2A1A3F] rounded-br-xl rounded-bl-xl lg:rounded-br-[28px] lg:rounded-bl-[28px]"
           >
             O nosso envio é EXPRESS saindo da logística para a agência dos
             Correios, após a confirmação de compra! Veja como funciona o nosso
@@ -710,7 +713,7 @@
 
       <div class="card-wrapper">
         <article>
-          <h3>1 Pote</h3>
+          <h3>1 pote</h3>
 
           <span class="duration"> 1 mês de tratamento </span>
 
@@ -761,7 +764,7 @@
 
       <div class="card-wrapper sm:scale-[1.05]">
         <article>
-          <h3>3 Potes + Spray</h3>
+          <h3>3 potes + Spray</h3>
 
           <span class="duration">3 meses de tratamento</span>
 
@@ -808,7 +811,7 @@
 
       <div class="card-wrapper">
         <article>
-          <h3>5 Potes</h3>
+          <h3>5 potes</h3>
 
           <span class="duration"> 5 meses de tratamento </span>
 
@@ -856,14 +859,12 @@
 
     <footer class="py-14 bg-black text-white">
       <div class="container-w">
-        <div
-          class="flex flex-col gap-12 mb-12 sm:flex-row sm:justify-between sm:items-center"
-        >
-          <div class="flex flex-col gap-12 xl:flex-row">
+        <div class="flex flex-col gap-12 mb-12 sm:flex-row sm:justify-between">
+          <div class="flex flex-col gap-12">
             <img
               src="./assets/logo-footer.svg"
               alt="TOPHAIR logo"
-              class="w-28 mx-auto sm:mx-0"
+              class="w-28 mx-auto sm:mx-0 lg:w-36"
             />
 
             <address class="not-italic">
@@ -898,9 +899,15 @@
             </address>
           </div>
 
-          <div
-            class="flex flex-col gap-12 lg:flex-row-reverse lg:justify-between"
-          >
+          <figure class="hidden lg:block">
+            <figcaption class="text-[8px] font-extrabold uppercase mb-2">
+              Formas de pagamento
+            </figcaption>
+
+            <img src="./assets/payment-methods.png" alt="" class="mx-auto" />
+          </figure>
+
+          <div class="flex flex-col gap-12">
             <div>
               <div class="flex justify-center items-center gap-3 mb-4 text-sm">
                 <img src="./assets/lock.svg" alt="" />
@@ -919,7 +926,7 @@
               </div>
             </div>
 
-            <figure>
+            <figure class="lg:hidden">
               <figcaption class="text-[8px] font-extrabold uppercase mb-2">
                 Formas de pagamento
               </figcaption>

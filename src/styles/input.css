@@ -53,12 +53,12 @@ em {
 }
 
 .cto-section h2 {
-  @apply lg:text-5xl;
+  @apply normal-case lg:text-4xl;
 }
 
 /* combo products section *************************************************************************/
 .products-section {
-  @apply container-w flex flex-col xl:flex-row-reverse justify-center items-center gap-8 py-16 xl:py-40 bg-base-200;
+  @apply container-w flex flex-col xl:flex-row-reverse justify-center items-center gap-8 py-16 xl:py-32 bg-base-200;
   background: linear-gradient(
     182.23deg,
     #2a1a3f 7.21%,
@@ -78,11 +78,11 @@ em {
 }
 
 .card-wrapper h3 {
-  @apply normal-case text-3xl xl:text-4xl;
+  @apply mb-1 normal-case text-3xl;
 }
 
 .card-wrapper .duration {
-  @apply block mb-6 text-xs xl:text-base;
+  @apply block mb-6 text-xs xl:text-sm;
 }
 
 .card-wrapper .bonus {
@@ -103,7 +103,7 @@ em {
 }
 
 .card-wrapper article > img {
-  @apply my-8;
+  @apply my-7;
 }
 
 .card-wrapper article > img.fixed-size {
@@ -119,11 +119,11 @@ em {
 }
 
 .promo .twelve-x {
-  @apply normal-case text-sm text-[#2A1A3F] xl:text-xl;
+  @apply normal-case text-sm text-[#2A1A3F] xl:text-base;
 }
 
 .promo .current-price {
-  @apply text-[#2A1A3F] text-xl xl:text-3xl;
+  @apply text-[#2A1A3F] text-xl;
 }
 
 .promo .current-price > sup {
@@ -143,7 +143,7 @@ em {
 }
 
 .card-wrapper .button {
-  @apply block w-[224px] mt-6 mx-auto text-[#11AC03] font-extrabold border-[3px] border-[#11AC03] rounded-full xl:border-[5px] xl:w-72 xl:text-xl xl:p-3;
+  @apply block w-[224px] mt-5 mx-auto text-[#11AC03] font-extrabold border-[3px] border-[#11AC03] rounded-full xl:border-[5px] xl:w-72 xl:text-xl xl:p-3;
 }
 
 /* faq section ************************************************************************************/
