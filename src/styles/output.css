@@ -636,6 +636,10 @@ video {
   display: none;
 }
 
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
 .h-\[72px\] {
   height: 72px;
 }
@@ -784,6 +788,10 @@ video {
   gap: 2rem;
 }
 
+.rounded-\[44px\] {
+  border-radius: 44px;
+}
+
 .rounded-\[64px\] {
   border-radius: 64px;
 }
@@ -832,6 +840,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-11 {
@@ -1095,14 +1108,14 @@ em {
 .card-wrapper {
   width: 100%;
   max-width: 24rem;
-  border-radius: 44px;
+  border-radius: 80px;
   padding: 10px;
 }
 
 @media (min-width: 1280px) {
   .card-wrapper {
-    margin-left: -0.75rem;
-    margin-right: -0.75rem;
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
     max-width: 28rem;
     --tw-scale-x: 0.80;
     --tw-scale-y: 0.80;
@@ -1115,7 +1128,7 @@ em {
 }
 
 .card-wrapper > article {
-  border-radius: 44px;
+  border-radius: 80px;
   --tw-bg-opacity: 1;
   background-color: rgb(241 241 241 / var(--tw-bg-opacity));
   padding-left: 1.25rem;
@@ -1414,9 +1427,9 @@ em {
     max-width: 44%;
   }
 
-  .sm\:scale-95 {
-    --tw-scale-x: .95;
-    --tw-scale-y: .95;
+  .sm\:scale-90 {
+    --tw-scale-x: .9;
+    --tw-scale-y: .9;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
