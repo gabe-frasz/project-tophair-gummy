@@ -947,6 +947,18 @@ video {
   text-decoration-line: underline;
 }
 
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 * {
   text-align: center;
   font-weight: 300;
@@ -1333,6 +1345,20 @@ em {
 
 #faq article header {
   background: linear-gradient(90deg, #9f26ca 0%, #ad6bd9 174.54%);
+}
+
+.hover\:bg-\[\#11AC03\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 172 3 / var(--tw-bg-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:opacity-70:hover {
+  opacity: 0.7;
 }
 
 @media (min-width: 640px) {
