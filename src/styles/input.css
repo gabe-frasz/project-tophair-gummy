@@ -58,7 +58,7 @@ em {
 
 /* combo products section *************************************************************************/
 .products-section {
-  @apply container-w flex flex-col xl:flex-row-reverse justify-center items-center gap-8 py-16 xl:py-32 bg-base-200;
+  @apply container-w flex flex-col xl:flex-row-reverse justify-center items-center gap-4 py-16 bg-base-200;
   background: linear-gradient(
     182.23deg,
     #2a1a3f 7.21%,
@@ -68,7 +68,7 @@ em {
 }
 
 .card-wrapper {
-  @apply w-full max-w-sm p-[10px] rounded-[44px] xl:max-w-md scale-90;
+  @apply w-full max-w-sm p-[10px] rounded-[44px] xl:max-w-md scale-[0.85];
   background: linear-gradient(#b6b6b6ff, #b6b6b655);
 }
 
