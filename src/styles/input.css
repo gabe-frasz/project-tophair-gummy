@@ -68,7 +68,7 @@ em {
 }
 
 .card-wrapper {
-  @apply w-full max-w-sm p-[10px] rounded-[44px] xl:max-w-md;
+  @apply w-full max-w-sm p-[10px] rounded-[44px] xl:max-w-md scale-90;
   background: linear-gradient(#b6b6b6ff, #b6b6b655);
 }
 
