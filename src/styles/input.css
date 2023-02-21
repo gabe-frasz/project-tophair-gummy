@@ -143,7 +143,7 @@ em {
 }
 
 .card-wrapper .button {
-  @apply block w-[224px] mt-5 mx-auto text-[#11AC03] font-extrabold border-[3px] border-[#11AC03] rounded-full xl:border-[5px] xl:w-72 xl:text-xl xl:p-3;
+  @apply block w-[224px] mt-5 mx-auto text-[#11AC03] font-extrabold border-[3px] border-[#11AC03] rounded-full xl:border-[5px] xl:w-72 xl:text-xl xl:p-3 hover:bg-[#11AC03] hover:text-white transition-colors;
 }
 
 /* faq section ************************************************************************************/
