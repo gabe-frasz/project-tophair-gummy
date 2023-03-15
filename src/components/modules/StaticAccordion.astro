@@ -1,0 +1,34 @@
+---
+interface Props {
+  header: string;
+  content: string;
+}
+
+const { header, content } = Astro.props;
+---
+
+<article class="max-w-2xl mx-auto text-white">
+  <header
+    class="flex justify-between items-center gap-2 h-[72px] lg:h-24 px-4 lg:px-10 rounded-xl lg:rounded-[28px]"
+  >
+    <h3 class="text-xs text-start font-extrabold normal-case lg:text-base">
+      {header}
+    </h3>
+
+    <img src="/+.svg" alt="plus sign" class="lg:w-4" />
+  </header>
+
+  <p
+    class="w-[90%] mx-auto p-3 text-[8px] lg:text-xs lg:px-8 lg:py-4 text-start font-light bg-[#2A1A3F] rounded-br-xl rounded-bl-xl lg:rounded-br-[28px] lg:rounded-bl-[28px]"
+  >
+    {content}
+
+    <slot />
+  </p>
+</article>
+
+<style>
+  article header {
+    background: linear-gradient(90deg, #9f26ca 0%, #ad6bd9 174.54%);
+  }
+</style>

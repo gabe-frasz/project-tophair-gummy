@@ -1,0 +1,65 @@
+---
+interface Props {
+  videoId?: string;
+  imageUrl?: string;
+  name: string;
+  strong: string;
+  quote: string;
+}
+
+const { videoId, imageUrl, name, strong, quote } = Astro.props;
+
+if (!videoId && !imageUrl)
+  throw new Error("Please specify either videoId or imageUrl");
+---
+
+<article
+  class="testimonial-bg w-full max-w-[350px] h-fit p-11 text-white rounded-[64px] lg:scale-75"
+>
+  {
+    videoId ? (
+      <video
+        preload="auto"
+        controls
+        class="w-full max-w-[200px] aspect-square mx-auto mb-8"
+      >
+        <source
+          src={`https://drive.google.com/uc?export=download&id=${videoId}`}
+          type="video/mp4"
+        />
+      </video>
+    ) : (
+      <img
+        src={imageUrl}
+        alt="Depoimento"
+        class="w-full max-w-[200px] aspect-square mx-auto mb-8 object-cover rounded-[44px]"
+      />
+    )
+  }
+
+  <h3 class="mb-2 normal-case lg:text-3xl">{name}</h3>
+
+  <img
+    src="/stars.png"
+    alt="Avaliação em estrelas"
+    class="mx-auto mb-5 lg:mb-6"
+  />
+
+  <strong class="block mb-2 lg:mb-3 normal-case">{strong}</strong>
+
+  <blockquote class="text-xs">“{quote}”</blockquote>
+
+  <br />
+</article>
+
+<style>
+  .testimonial-bg {
+    background: linear-gradient(
+      194.44deg,
+      #2a1a3f 0%,
+      #9f26ca 50.28%,
+      #ad6bd9 100%
+    );
+    box-shadow: 0px 0px 200px 35px rgba(0, 0, 0, 0.2);
+  }
+</style>

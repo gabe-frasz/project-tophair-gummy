@@ -1,0 +1,22 @@
+---
+interface Props {
+  type: "success" | "failure";
+  iconUrl?: string;
+}
+
+const { type, iconUrl } = Astro.props;
+---
+
+<em
+  class={`relative not-italic font-medium flex justify-center items-center w-full max-w-[220px] mx-auto p-2 rounded-full  text-white text-[8px] xl:text-xs xl:max-w-[288px] xl:p-3 ${
+    type === "failure" ? "bg-[#B6B6B6]" : "bg-[#2A1A3F]"
+  }`}
+>
+  <img
+    src={type === "failure" ? "/x.svg" : iconUrl}
+    alt=""
+    class="absolute left-2 xl:left-4 xl:w-6"
+  />
+
+  <slot />
+</em>

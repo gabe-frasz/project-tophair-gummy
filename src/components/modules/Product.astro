@@ -1,0 +1,102 @@
+---
+import { getBRLCurrency } from "../../utils";
+
+interface Props {
+  highlight?: boolean;
+  title: string;
+  description: string;
+  imageUrl: string;
+  currentPrice: number;
+  promotionalPrice: number;
+  fullPrice: number;
+  shipping?: number;
+  marketingLink: string;
+}
+
+const {
+  highlight,
+  title,
+  description,
+  imageUrl,
+  currentPrice,
+  promotionalPrice,
+  fullPrice,
+  shipping,
+  marketingLink,
+} = Astro.props;
+
+const price = {
+  current: getBRLCurrency(currentPrice),
+  promotional: getBRLCurrency(promotionalPrice),
+  full: getBRLCurrency(fullPrice),
+  shipping: shipping ? getBRLCurrency(shipping) : null,
+};
+---
+
+<div
+  class={`card-wrapper w-full max-w-sm xl:-mx-5 p-[10px] rounded-[80px] xl:max-w-md ${
+    highlight ? "xl:scale-90" : "xl:scale-[0.8]"
+  }`}
+>
+  <article class="px-5 py-8 bg-[#f1f1f1] rounded-[80px]">
+    <h3 class="mb-1 normal-case text-3xl">{title}</h3>
+
+    <span class="block mb-6 text-xs xl:text-sm">{description}</span>
+
+    <div class="flex flex-col gap-1">
+      <slot />
+    </div>
+
+    <img src={imageUrl} alt={title} class="h-44 xl:h-[220px] mx-auto my-7" />
+
+    <div class="flex justify-center items-center gap-2">
+      <span
+        class="line-through text-[0.5rem] text-[#525252] font-medium xl:text-xs"
+      >
+        De R$ {price.promotional}
+      </span>
+
+      <div class="flex flex-col items-end">
+        <strong class="normal-case text-sm text-[#2A1A3F] xl:text-base">
+          12x
+        </strong>
+
+        <strong class="text-[#2A1A3F] text-xl">
+          <sup class="font-extrabold">R$</sup>
+          {price.current}
+        </strong>
+      </div>
+    </div>
+
+    <hr class="h-0.5 bg-[#B6B6B6] my-2" />
+
+    <span class="block text-[#292929] text-xs xl:text-base"
+      >ou R$ {price.full} à vista</span
+    >
+
+    {
+      price.shipping ? (
+        <span class="block font-light text-[8px] xl:text-xs">
+          +frete fixo R$ {price.shipping}
+        </span>
+      ) : null
+    }
+
+    <a
+      href={marketingLink}
+      class="block w-[224px] mt-5 mx-auto text-[#11AC03] font-extrabold border-[3px] border-[#11AC03] rounded-full xl:border-[5px] xl:w-72 xl:text-xl xl:p-3 hover:bg-[#11AC03] hover:text-white transition-colors"
+    >
+      Escolher
+    </a>
+  </article>
+</div>
+
+<style>
+  .card-wrapper {
+    background: linear-gradient(#b6b6b6ff, #b6b6b655);
+  }
+
+  .card-wrapper > article {
+    box-shadow: 0px 0px 200px 10px rgba(0, 0, 0, 0.3);
+  }
+</style>
