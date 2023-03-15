@@ -1,0 +1,358 @@
+---
+import CTO from "../components/layouts/CTO.astro";
+import Footer from "../components/layouts/Footer.astro";
+import Navbar from "../components/layouts/Navbar.astro";
+import Products from "../components/layouts/Products.astro";
+import StaticAccordion from "../components/modules/StaticAccordion.astro";
+import Testimonial from "../components/modules/Testimonial.astro";
+import TextPill from "../components/modules/TextPill.astro";
+
+import "../styles/globals.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>TOPHAIR | VSIONAR</title>
+    <link rel="shortcut icon" href="/gummy-bear.png" type="image/png" />
+  </head>
+
+  <body class="min-h-screen">
+    <Navbar />
+
+    <main
+      class="container-w container-px flex flex-col xl:flex-row items-center gap-20 w-full py-20 xl:py-36"
+    >
+      <img
+        src="/main-section.png"
+        alt="Ilustração dos produtos TOPHAIR"
+        class="w-full xl:max-w-lg 2xl:max-w-xl mx-auto"
+      />
+
+      <div>
+        <h2 class="mb-5 xl:text-5xl xl:text-start">
+          O que tem feito para cuidar das quedas capilares?
+        </h2>
+
+        <p class="lg:mb-14 xl:text-xl xl:text-start">
+          A gummy da TOP HAIR pode te ajudar a restaurar seus cabelos em poucas
+          semanas.
+        </p>
+
+        <div class="hidden xl:flex gap-24">
+          <img src="/lactose.svg" alt="Sem lactose" class="w-24" />
+
+          <img src="/sugar.svg" alt="Sem açúcar" class="w-24 mt-6" />
+
+          <img src="/gluten.svg" alt="Sem glúten" class="w-24" />
+        </div>
+      </div>
+
+      <a
+        href="/#peca-agora"
+        class="block w-full py-3 sm:py-4 md:py-5 max-w-lg bg-black text-white xl:hidden rounded-full"
+      >
+        Peça Agora
+      </a>
+    </main>
+
+    <article
+      class="container-w flex flex-col xl:flex-row xl:items-center gap-12 xl:gap-28 py-14 xl:py-36 bg-base-200 text-white"
+    >
+      <div>
+        <h2 class="mb-5 text-start text-lg xl:text-4xl xl:mb-10">
+          Cientistas descobrem o principal motivo da queda capilar feminino
+        </h2>
+
+        <p class="text-start mb-4 xl:text-xl xl:mb-6">
+          A queda excessiva de cabelo pode estar relacionada a predisposições
+          genéticas e alterações hormonais, ligadas a distúrbios de tireoide e
+          síndrome dos ovários policistos, por exemplo.
+        </p>
+
+        <p class="text-start xl:text-xl">
+          Pode ser também sintoma de doenças autoimunes, como o lúpus, ou ser
+          desencadeada pelo estresse ou uso de determinados medicamentos.
+        </p>
+      </div>
+
+      <img
+        src="/section-two.png"
+        alt="Ilustração de placa de petri de laboratório"
+        class="w-full max-w-lg mx-auto"
+      />
+    </article>
+
+    <article
+      id="sobre"
+      class="container-w flex flex-col lg:flex-row-reverse lg:justify-between items-center py-16 lg:py-0 bg-base-50"
+    >
+      <div class="relative w-fit mx-auto lg:hidden">
+        <img src="/logo.svg" alt="TOPHAIR logo" class="w-full max-w-2xl" />
+
+        <img
+          src="/gummy-bear.png"
+          alt="Urso de goma"
+          class="w-12 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        />
+      </div>
+
+      <img
+        src="/about-section.png"
+        alt="Produto TOPHAIR"
+        class="w-full max-w-md lg:max-w-xl xl:max-w-3xl lg:-mx-16 my-14 lg:my-0"
+      />
+
+      <div>
+        <img
+          src="/logo.svg"
+          alt="TOPHAIR logo"
+          class="hidden lg:block w-full max-w-lg mb-10"
+        />
+
+        <p class="ml-2 mb-5 text-start xl:text-lg max-w-lg">
+          Diferente de tudo que você provavelmente já testou. Top Hair Gummy é o
+          único tratamento capaz de restaurar os seus cabelos em poucas semanas.
+        </p>
+
+        <p class="ml-2 mb-5 lg:mb-10 xl:mb-12 text-start xl:text-lg max-w-lg">
+          O segredo da nossa fórmula, está na associação dos principais agentes
+          naturais, responsáveis pelo estímulo da produção capilar. Biotina,
+          Vitamina A, Ácido Hialurônico, Complexo de Vitaminas e o Zinco compõem
+          um extraordinário estimulante para a saúde dos seus cabelos. Além do
+          seu potencial excepcional regenerativo, garantindo a recuperação dos
+          seus fios.
+        </p>
+
+        <strong class="ml-2 block text-start max-w-lg">
+          REDUZ A QUEDA EM 80% COM O PODER DO ÁCIDO HIALURÔNICO ASSOCIADO A
+          BIOTINA
+        </strong>
+      </div>
+    </article>
+
+    <section
+      id="detalhes"
+      class="container-w pt-20 pb-14 bg-base-200 text-white"
+    >
+      <h2 class="mb-12 xl:text-5xl">EM CADA GUMMY VOCÊ ENCONTRARÁ:</h2>
+
+      <div
+        class="grid grid-cols-1 justify-items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5"
+      >
+        <img
+          src="/acid.png"
+          alt="Ácido Hialurônico"
+          class="max-w-[256px] -my-6 lg:my-0 lg:-mx-4"
+        />
+        <img
+          src="/vitamin-a.png"
+          alt="Vitamina A"
+          class="max-w-[256px] -my-6 lg:my-0 lg:-mx-4"
+        />
+        <img
+          src="/zinc.png"
+          alt="Zinco"
+          class="max-w-[256px] -my-6 lg:my-0 lg:-mx-4"
+        />
+        <img
+          src="/biotin.png"
+          alt="Biotina"
+          class="max-w-[256px] -my-6 lg:my-0 lg:-mx-4"
+        />
+        <img
+          src="/vitamin-complex.png"
+          alt="Complexo de vitaminas"
+          class="max-w-[256px] -my-6 lg:my-0 lg:-mx-4"
+        />
+      </div>
+    </section>
+
+    <section class="container-w py-14 xl:py-32 bg-base-100">
+      <h2 class="mb-12 text-lg lg:mb-24 xl:text-5xl uppercase">
+        PORQUE A TOPHAIR GUMMY PODE SER A SUA MAIOR ALIADA CONTRA OS PROBLEMAS
+        CAPILARES?
+      </h2>
+
+      <div
+        class="flex flex-col gap-5 lg:flex-row lg:justify-center xl:items-center"
+      >
+        <div class="flex flex-col gap-5 lg:gap-20">
+          <TextPill>
+            Combate a queda capilar em <br class="hidden lg:block" />
+            80%
+          </TextPill>
+
+          <TextPill>Estimula o crescimento capilar até 8x mais</TextPill>
+
+          <TextPill>Preenchimento das folhas/entradas</TextPill>
+
+          <TextPill>Crescimento e fortalecimento das unhas</TextPill>
+        </div>
+
+        <img
+          src="/gummy-bear.png"
+          alt="Urso de goma"
+          class="hidden xl:block max-w-md"
+        />
+
+        <div class="flex flex-col gap-5 lg:gap-20">
+          <TextPill>
+            Auxilia na manutenção de uma pele saudável e jovem
+          </TextPill>
+
+          <TextPill>Previne o envelhecimento precoce da pele</TextPill>
+
+          <TextPill>Fortalece sua imunidade</TextPill>
+
+          <TextPill>Não engorda</TextPill>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="max-w-[1920px] mx-auto relative flex justify-between text-white"
+    >
+      <img
+        src="/shipping-guarantee-mobile.png"
+        alt=""
+        class="w-full sm:hidden"
+      />
+
+      <img src="shipping-guarantee.png" alt="" class="hidden sm:block" />
+
+      <div
+        class="absolute left-[5vw] right-[5vw] sm:right-auto w-fit top-[5%] sm:max-w-[44%] sm:pt-12"
+      >
+        <h2 class="w-fit mx-auto sm:mx-0 mb-5 sm:text-start xl:text-5xl">
+          Envio Express
+        </h2>
+
+        <p class="mb-4 sm:text-start text-xs xl:text-base font-extralight">
+          Realizando a compra e pagamento em dias úteis, sua TopHair é enviada
+          em até 48h. Esse novo modelo de envio, foi pensado para diminuir o seu
+          tempo de espera para o tratamento.
+        </p>
+
+        <strong
+          class="block w-fit mx-auto sm:mx-0 sm:text-start text-xs normal-case xl:text-base font-bold"
+        >
+          *Consulte o regulamento em perguntas frequentes
+        </strong>
+      </div>
+
+      <div
+        class="absolute left-[5vw] right-[5vw] sm:left-auto w-fit top-[55%] sm:top-[15%] sm:max-w-[44%] sm:py-12"
+      >
+        <h2 class="mx-auto sm:mx-0 mb-5 sm:text-end xl:text-5xl">
+          GARANTIA DE <br class="hidden xl:block" />
+          30 DIAS
+        </h2>
+
+        <p class="mb-4 sm:text-end text-xs xl:text-base font-extralight">
+          Com ela, você tem segurança para experimentar o produto e caso não
+          tenha nenhum resultado comprovado, basta entrar em contato com a
+          gente!
+        </p>
+
+        <strong
+          class="block mx-auto sm:mx-0 sm:text-end text-xs normal-case xl:text-base font-bold"
+        >
+          *Consulte o regulamento em perguntas frequentes
+        </strong>
+      </div>
+    </section>
+
+    <section
+      class="container-w flex flex-col items-center pt-20 pb-12 bg-base-50"
+    >
+      <h2 class="mb-12 lg:text-5xl">
+        Usuários reais do TOPHAIR. <br />
+        Resultados que mudam a vida real.
+      </h2>
+
+      <div class="flex flex-col lg:flex-row gap-8 lg:gap-0">
+        <Testimonial
+          videoId="10ODChRGOTmDB8ra4qlkmtTlBfpwlPUHw"
+          name="Deisy"
+          strong="Melhorou minha autoestima."
+          quote="Cheio de cabelo novo em 1 mês, nunca achei que fosse ter tanto orgulho desse cabelo."
+        />
+
+        <Testimonial
+          imageUrl="/clara-testimonial.jpg"
+          name="Clara"
+          strong="Qualidade e certeza de eficácia."
+          quote="“Parabéns pela competência e empenho em fazer um excelente produto, muita qualidade e certeza de eficácia."
+        />
+
+        <Testimonial
+          videoId="1n3gqaplbbr3GUHPFQbZlquqIyINWlJr8"
+          name="Laiane"
+          strong="A queda diminuiu, estou amando!"
+          quote="“Olha como está meu cabelo, melhorou demais estava em uma fase horrível... A queda diminuiu estou amando."
+        />
+      </div>
+    </section>
+
+    <CTO />
+
+    <Products id="peca-agora" />
+
+    <section id="faq" class="container-w py-16 bg-base-50">
+      <h2 class="mb-9 lg:text-5xl lg:mb-20 uppercase">
+        FAQ - PRINCIPAIS PERGUNTAS
+      </h2>
+
+      <div class="flex flex-col gap-7">
+        <StaticAccordion
+          header="Como devo usar a TOPHAIR gummy?"
+          content="Consumir 1 gominha por dia! É importante não exceder o consumo diário evitando assim alta concentração de vitaminas no organismo. 1 dose por dia é suficiente para a saúde do seu cabelo, da pele e das unhas! Lembrando de manter  tratamento todos os dias, pois dessa forma você estará suplementando seu organismo de forma constante e duradoura."
+        />
+
+        <StaticAccordion
+          header="Quais cuidados devo ter com a TOPHAIR gummy?"
+          content="Por se tratar de um produto em goma, é importante que você tenha alguns cuidados pra garantir que apresenta os resultados desejados. Evitar exposição ao calor, luz e umidade é essencial! Deixar a sua gominha exposta ao calor pode levar à alteração da forma e sabor do produto! Em locais muito frios (como geladeira) pode resfriar a goma e alterar a sua consistência. Por tanto, mantenha em local fresco e arejado!"
+        />
+
+        <StaticAccordion
+          header="Em quanto tempo a TOPHAIR gummy faz efeito?"
+          content="A TOPHAIR GUMMY é um tratamento contínuo com resultados visíveis a partir de 3 semanas. Lembrando que os resultados variam de acordo com cada organismo! Recomendamos o tratamento mínimo de 90 dias para que possa obter resultados mais visíveis e satisfatórios."
+        />
+
+        <StaticAccordion
+          header="Gestantes e Lactantes podem consumir TOPHAIR gummy?"
+          content="Embora a TOPHAIR GUMMY seja um produto natural, sempre recomendamos que gestantes, lactantes e menores de 18 anos devem consumir o produto somente após orientação do médico obstetra e nutricionista, respectivamente."
+        />
+
+        <StaticAccordion
+          header="Qual o prazo de entrega da TOPHAIR gummy?"
+          content=""
+        >
+          O nosso envio é EXPRESS saindo da logística para a agência dos
+          Correios, após a confirmação de compra! Veja como funciona o nosso
+          envio: <br />
+          - O envio é realizado dentro das 24h do próximo dia útil. <br />
+          *Lembrando que esse prazo é o envio da Logística para a Agência dos Correios*.
+          O prazo padrão de entrega dos Correios é de *5 à 15 dias úteis* (não inclui
+          finais de semana, nem feriados).
+        </StaticAccordion>
+      </div>
+    </section>
+
+    <CTO />
+
+    <Products />
+
+    <Footer />
+  </body>
+</html>

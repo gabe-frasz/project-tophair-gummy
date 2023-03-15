@@ -1,0 +1,90 @@
+---
+import Product from "../modules/Product.astro";
+import ProductPill from "../modules/ProductPill.astro";
+
+interface Props {
+  id?: string;
+}
+
+const { id } = Astro.props;
+---
+
+<section
+  id={id}
+  class="container-w flex flex-col xl:flex-row-reverse justify-center items-center gap-4 py-16 bg-base-200"
+>
+  <h2 class="sr-only invisible">Combos de produtos Hair Top</h2>
+
+  <Product
+    title="1 pote"
+    description="1 mês de tratamento"
+    imageUrl="/1-bottle.png"
+    promotionalPrice={1649}
+    currentPrice={1470}
+    fullPrice={14790}
+    shipping={1590}
+    marketingLink="https://www.makepages.com.br/r/BUB1624737"
+  >
+    <ProductPill type="success" iconUrl="/percentage.svg">
+      25% de desconto
+    </ProductPill>
+
+    <ProductPill type="failure">Tônico spray mágico</ProductPill>
+
+    <ProductPill type="failure">Frete grátis</ProductPill>
+  </Product>
+
+  <Product
+    highlight
+    title="3 potes + Spray"
+    description="3 meses de tratamento"
+    imageUrl="/3-bottles-spray.png"
+    promotionalPrice={4930}
+    currentPrice={3290}
+    fullPrice={32790}
+    marketingLink="https://www.makepages.com.br/r/BNA1624752"
+  >
+    <ProductPill type="success" iconUrl="/spray.svg">
+      Tônico spray mágico
+    </ProductPill>
+
+    <ProductPill type="success" iconUrl="/percentage.svg">
+      40% de desconto
+    </ProductPill>
+
+    <ProductPill type="success" iconUrl="/shipping.svg">
+      Frete grátis
+    </ProductPill>
+  </Product>
+
+  <Product
+    title="5 potes"
+    description="5 meses de tratamento"
+    imageUrl="/5-bottles.png"
+    promotionalPrice={6162}
+    currentPrice={4590}
+    fullPrice={45790}
+    marketingLink="https://www.makepages.com.br/r/BWL1624755"
+  >
+    <ProductPill type="success" iconUrl="/percentage.svg">
+      35% de desconto
+    </ProductPill>
+
+    <ProductPill type="success" iconUrl="/shipping.svg">
+      Frete grátis
+    </ProductPill>
+
+    <ProductPill type="failure">Tônico spray mágico</ProductPill>
+  </Product>
+</section>
+
+<style>
+  section {
+    background: linear-gradient(
+      182.23deg,
+      #2a1a3f 7.21%,
+      #9f26ca 63.33%,
+      #ad6bd9 100%
+    );
+  }
+</style>
